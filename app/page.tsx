@@ -85,6 +85,7 @@ export default function App() {
                   <Search className="w-5 h-5 text-slate-400 mr-2" />
                   <div className="flex-1 z-50">
                     <Select
+                      instanceId="location-select"
                       options={locationOptions}
                       placeholder="Search Location..."
                       isClearable
@@ -197,8 +198,8 @@ export default function App() {
                               key={type}
                               onClick={() => setPropertyType(type)}
                               className={`px-5 py-2.5 rounded-full border text-sm font-semibold transition-all ${propertyType === type
-                                  ? 'border-slate-900 bg-slate-900 text-white shadow-md'
-                                  : 'border-slate-300 text-slate-600 hover:border-slate-400 bg-white'
+                                ? 'border-slate-900 bg-slate-900 text-white shadow-md'
+                                : 'border-slate-300 text-slate-600 hover:border-slate-400 bg-white'
                                 }`}
                             >
                               {type}
@@ -244,8 +245,8 @@ export default function App() {
                               key={bedOpt}
                               onClick={() => setBeds(bedOpt)}
                               className={`px-5 py-2.5 rounded-full border text-sm font-semibold transition-all ${beds === bedOpt
-                                  ? 'border-slate-900 bg-slate-900 text-white shadow-md'
-                                  : 'border-slate-300 text-slate-600 hover:border-slate-400 bg-white'
+                                ? 'border-slate-900 bg-slate-900 text-white shadow-md'
+                                : 'border-slate-300 text-slate-600 hover:border-slate-400 bg-white'
                                 }`}
                             >
                               {bedOpt}
